@@ -5,9 +5,8 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require('mongoose');
-//mongodb+srv://admin-pranjal:<password>@cluster0.vplp3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
-mongoose.connect("mongodb+srv://admin-pranjal:test1520@cluster0.vplp3.mongodb.net/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-pranjal:<password>@cluster0.vplp3.mongodb.net/myFirstDatabase", {useNewUrlParser: true});
 const postSchema = {
  title: String,
  content: String
